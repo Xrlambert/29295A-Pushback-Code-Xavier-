@@ -4,9 +4,11 @@ void default_constants();
 void testAuton(); //foward and back
 void driveAuton(); //forward, back, turn
 void turnAuton(); //turning only
-void  fullWP_RR(); // solo win point
+void fullWP_RR(); // solo win point
 void Block9_RR();
 void Skills1(); //skills 
+void SoloAWP(); //snow day AWP
+void _9Block(); //snow day 9Block
 
 void drive_example();
 void turn_example();

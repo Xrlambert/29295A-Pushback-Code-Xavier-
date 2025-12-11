@@ -20,7 +20,7 @@ private:
 
     // input curve constants
     float pCurve = 0.7;       // curve for fwd/back
-    float tCoefficient = 1.2; // curve for turn
+    float tCoefficient = 1.07; // curve for turn // 1.2
     float tCurve = 0.4;       // coefficient for turn
 
 public:
