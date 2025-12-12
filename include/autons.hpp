@@ -8,7 +8,10 @@ void fullWP_RR(); // solo win point
 void Block9_RR();
 void Skills1(); //skills 
 void SoloAWP(); //snow day AWP
-void _9Block(); //snow day 9Block
+void _7BlockRedLeft(); //snow day 7Block
+void _7BlockRedRight(); //snow day 7Block
+void HalfAWPRedRight();
+void HalfAWPRedLeft(); //snow day middle goal awp
 
 void drive_example();
 void turn_example();
