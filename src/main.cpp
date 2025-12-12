@@ -46,10 +46,10 @@ ez::as::auton_selector.autons_add({
 //{"fullWP_RR", fullWP_RR},
 // {"Block9_RR", Block9_RR},
 
-//{"Skills1", Skills1},
+{"Skills1", Skills1},
 //{"SoloAWP", SoloAWP},
 //{"7BlockRedRight", _7BlockRedRight};
-{"7BlockRedLeft", _7BlockRedLeft},
+//{"7BlockRedLeft", _7BlockRedLeft},
 //{"HalfAWPRedRight", HalfAWPRedRight},
 //{"HalfAWPRedLeft", HalfAWPRedLeft},
 

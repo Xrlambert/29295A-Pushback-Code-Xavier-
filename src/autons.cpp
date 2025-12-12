@@ -592,7 +592,7 @@ void Block9_RR() {
   ch->pid_wait();
   brain->intakeOn = true;
 } 
-  *//*
+  */
  void Skills1() {
   Drive* ch = &robot->DriveTrain_.DriveTrain_.Chassis_;
   robot->IsAutonomous = true;
@@ -612,8 +612,14 @@ void Block9_RR() {
   ch->pid_wait_quick_chain();
   ch->pid_turn_set(90, TURN_SPEED);
   ch->pid_wait_quick_chain();
-  ch->pid_drive_set(72, DRIVE_SPEED); //moves into matchload 1
+  ch->pid_drive_set(20, DRIVE_SPEED); //moves into matchload 1
   ch->pid_wait_quick_chain();
+  pros::delay(800);
+  ch->pid_drive_set(-1, DRIVE_SPEED); //nudge loader
+  ch->pid_wait_quick_chain();
+  ch->pid_drive_set(1, DRIVE_SPEED); 
+  ch->pid_wait_quick_chain();
+  pros::delay(1400);
   ch->pid_drive_set(-5, DRIVE_SPEED); 
   ch->pid_wait_quick_chain();
   ch->pid_turn_set(0, TURN_SPEED);
@@ -641,8 +647,14 @@ void Block9_RR() {
   ch->pid_wait_quick_chain();
   brain->descoreOn = true;
 
-  ch->pid_drive_set(75, DRIVE_SPEED); //intakes from loader
+  ch->pid_drive_set(55, DRIVE_SPEED); //intakes from loader
   ch->pid_wait_quick_chain();
+  pros::delay(1400);
+  ch->pid_drive_set(-1, DRIVE_SPEED); //nudge loader
+  ch->pid_wait_quick_chain();
+  ch->pid_drive_set(1, DRIVE_SPEED); 
+  ch->pid_wait_quick_chain();
+  pros::delay(1400);
   ch->pid_drive_set(-16,  DRIVE_SPEED);
   ch->pid_wait_quick_chain();
   brain->intakeOn = false; 
@@ -662,8 +674,14 @@ void Block9_RR() {
   ch->pid_turn_set(-91, TURN_SPEED); 
   ch->pid_wait_quick_chain(); 
 
-  ch->pid_drive_set(75, DRIVE_SPEED); //moves into matchload 3
+  ch->pid_drive_set(35, DRIVE_SPEED); //moves into matchload 3
   ch->pid_wait_quick_chain();
+    pros::delay(1400);
+  ch->pid_drive_set(-1, DRIVE_SPEED); //nudge loader
+  ch->pid_wait_quick_chain();
+  ch->pid_drive_set(1, DRIVE_SPEED); 
+  ch->pid_wait_quick_chain();
+  pros::delay(1400);
   ch->pid_drive_set(-5, DRIVE_SPEED); 
   ch->pid_wait_quick_chain();
   ch->pid_turn_set(180, TURN_SPEED);
@@ -691,8 +709,14 @@ void Block9_RR() {
   ch->pid_wait_quick_chain();
   brain->descoreOn = true;
 
-  ch->pid_drive_set(75, DRIVE_SPEED); //intakes from loader 4
+  ch->pid_drive_set(55, DRIVE_SPEED); //intakes from loader 4
   ch->pid_wait_quick_chain();
+    pros::delay(1400);
+  ch->pid_drive_set(-1, DRIVE_SPEED); //nudge loader
+  ch->pid_wait_quick_chain();
+  ch->pid_drive_set(1, DRIVE_SPEED); 
+  ch->pid_wait_quick_chain();
+  pros::delay(1400);
   ch->pid_drive_set(-16,  DRIVE_SPEED);
   ch->pid_wait_quick_chain();
   brain->intakeOn = false; 
@@ -709,21 +733,21 @@ void Block9_RR() {
   brain->intakeReverseOn = true;
   ch->pid_drive_set(32, DRIVE_SPEED);
   ch->pid_wait_quick_chain();
+  ch->pid_turn_set(0, TURN_SPEED); //aligns with wall
+  ch->pid_wait_quick_chain();
+  ch->pid_drive_set(30, 110);
+  ch->pid_wait_quick_chain();
+  pros::delay(500);
+  ch->pid_turn_set(90, TURN_SPEED);
+  ch->pid_wait_quick_chain();
+  ch->pid_turn_set(180, TURN_SPEED);
+  ch->pid_wait_quick_chain();
+  ch->pid_turn_set(-90, TURN_SPEED);
+  ch->pid_wait_quick_chain();
   ch->pid_turn_set(0, TURN_SPEED);
   ch->pid_wait_quick_chain();
-  ch->pid_drive_set(40, 110);
-  ch->pid_wait_quick_chain();
-  pros::delay(1000);
-  ch->pid_turn_set(-90, 120);
-  ch->pid_wait_quick_chain();
-  ch->pid_turn_set(180, 120);
-  ch->pid_wait_quick_chain();
-  ch->pid_turn_set(90, 120);
-  ch->pid_wait_quick_chain();
-  ch->pid_turn_set(0, 120);
-  ch->pid_wait_quick_chain();
 }
-*//*
+/*
 void SoloAWP() {
   Drive* ch = &robot->DriveTrain_.DriveTrain_.Chassis_;
   robot->IsAutonomous = true;
@@ -852,7 +876,7 @@ void _7BlockRedRight() {
   ch->pid_drive_set(-23,  50); //descore
   ch->pid_wait_quick_chain(); 
 } */
-
+/*
 
 void _7BlockRedLeft() {
   Drive* ch = &robot->DriveTrain_.DriveTrain_.Chassis_;
@@ -909,7 +933,7 @@ void _7BlockRedLeft() {
   ch->pid_drive_set(-23,  50); //descore
   ch->pid_wait_quick_chain(); 
   
-} 
+} */
 /*
 void HalfAWPRedRight() {
   Drive* ch = &robot->DriveTrain_.DriveTrain_.Chassis_;
